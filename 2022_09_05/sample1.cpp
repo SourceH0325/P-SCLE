@@ -18,3 +18,5 @@ int sum( int x, int y ) {
 
     return temp;
 }
+
+// result : 30

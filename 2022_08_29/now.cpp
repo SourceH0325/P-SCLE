@@ -17,3 +17,9 @@ int main() {
     printf("\n");
     return 0;
 }
+
+// XOOOX
+// OXOXO
+// OOXOO
+// OXOXO
+// XOOOX
