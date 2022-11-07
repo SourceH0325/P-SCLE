@@ -1,24 +1,21 @@
-void swap(double *pa, double *pb);
-
-void line_up(double *max, double *mid, double *min);
-
 #include <stdio.h>
 
-int main(void) {
-	
+void swap (double *pa, double *pb);
+
+void line_up (double *max, double *mid, double *min);
+
+
+int main(void){
 	double max, mid, min;
-	
-	printf("½Ç¼ö °ª 3°³ ÀÔ·Â : ");
+	printf("ì‹¤ìˆ˜ê°’ 3ê°œ ì…ë ¥ : ");
 	scanf("%lf%lf%lf", &max, &mid, &min);
 	line_up(&max, &mid, &min);
-	
-	printf("Á¤·ÄµÈ °ª Ãâ·Â : %.1lf, %.1lf, %.1lf\n", max, mid, min);
-	
+	printf("ì •ë ¬ëœ ê°’ ì¶œë ¥ : %.1lf, %.1lf, %.1lf\n", max, mid, min);
 	return 0;
-}
+} 
 
-void swap(double *pa, double *pb) {
-	
+void swap (double *pa, double *pb)
+{
 	double temp;
 	
 	temp = *pa;
@@ -26,4 +23,9 @@ void swap(double *pa, double *pb) {
 	*pb = temp;
 }
 
-// I dont know C++
+void line_up(double *max, double *mid, double *min)
+{
+  if(*max<*mid) swap(max, mid);
+  if(*max<*min) swap(max, min);
+  if(*mid<*min) swap(mid, min);
+}
