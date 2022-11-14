@@ -29,9 +29,9 @@ void swap (double *pa, double *pb) {
 
 void line_up(double *max, double *mid, double *min) {
 
-  if(*max<*mid) swap(max, mid);
-  if(*max<*min) swap(max, min);
-  if(*mid<*min) swap(mid, min);
+  if (*max<*mid) swap(max, mid);
+  if (*max<*min) swap(max, min);
+  if (*mid<*min) swap(mid, min);
 }
 
 // 실수값 3개 입력 : 3.5 2.7 9.5
