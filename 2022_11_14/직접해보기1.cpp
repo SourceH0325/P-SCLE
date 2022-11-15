@@ -9,7 +9,7 @@ int main(void) {
 
 	printf("학생 명 수를 입력하시오 : ");
 	scanf("%d", &v);
-    printf("\n");
+    	printf("\n");
 
 	int score[v];
 	
