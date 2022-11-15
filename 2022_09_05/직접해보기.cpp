@@ -13,7 +13,7 @@ int main(void) {
 }
 
 double centi_to_meter ( int cm ) {
-
+    
     double temp;
     
     temp = (double) cm / 100;
