@@ -4,8 +4,8 @@ void sum (int n);
 
 int main (void) {
 
-	sum	(10);
-	sum	(100);
+	sum(10);
+	sum(100);
 	
 	return 0;
 }
