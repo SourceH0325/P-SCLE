@@ -16,8 +16,8 @@ int get_num (void) {
 	
 	int num;
 	
-		printf("양수를 입력해주세요 : ");
-		scanf("%d", &num);
+	printf("양수를 입력해주세요 : ");
+	scanf("%d", &num);
 	
 	while (num < 0) {
 		printf("음수로 입력하셨습니다.\n다시 입력해주세요.\n");
